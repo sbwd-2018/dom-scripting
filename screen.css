@@ -7,3 +7,29 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+html {
+  font-size: 64px;
+  color: red;
+}
+
+li:first-child {
+  color: green;
+}
+
+/* State Styles */
+
+.nojs {
+  border-top: 20px solid red;
+}
+
+.js {
+  border-top: 20px solid blue;
+}
+
+.js ul {
+  display: none;
+}
+.js ul.visible {
+  display: block;
+}
