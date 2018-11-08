@@ -22,7 +22,15 @@
     heading.innerHTML = '<a href="#content">'+heading_label+'</a>';
     heading.addEventListener('click',function(){
       var content = document.querySelector('#content');
-      content.classList.add('visible');
+      var label = document.querySelector('h1 a');
+
+      content.classList.toggle('visible');
+
+      if (label.textContent === heading_label) {
+        label.textContent = 'Click to Hide Content';
+      } else {
+        label.textContent = heading_label;
+      }
     })
   });
 
