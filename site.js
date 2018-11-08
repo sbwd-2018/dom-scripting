@@ -18,7 +18,12 @@
     // And then add the .js class to <html>:
     html_tag.classList.add('js');
 
-    // Otherwise, let's party
+    var heading = document.querySelector('h1');
+    heading.innerHTML = '<a href="#content">Click to Show Content</a>';
+    heading.addEventListener('click',function(){
+      var content = document.querySelector('#content');
+      content.classList.add('visible');
+    })
   });
 
   console.log("Hello from JavaScript! You have querySelector!");
